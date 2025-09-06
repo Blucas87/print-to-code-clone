@@ -1,73 +1,126 @@
-# Welcome to your Lovable project
+# Landing Page Profissional
 
-## Project info
+Uma landing page moderna e responsiva desenvolvida com React, TypeScript, Tailwind CSS e componentes shadcn/ui.
 
-**URL**: https://lovable.dev/projects/c10d3a23-b5b7-45cd-a7ad-b9005ae5168e
+## 🚀 Características
 
-## How can I edit this code?
+- **Responsivo**: Design mobile-first que funciona perfeitamente em todos os dispositivos
+- **Performance**: Otimizada para carregamento rápido e SEO
+- **Acessibilidade**: Segue as diretrizes WCAG AA
+- **Componentes**: Arquitetura modular com componentes reutilizáveis
+- **Design System**: Sistema de design consistente com cores, tipografia e animações
 
-There are several ways of editing your application.
+## 🎨 Design System
 
-**Use Lovable**
+### Cores Principais
+```css
+--primary: #000000 (Preto principal)
+--secondary: #38B6FF (Azul secundário)
+--accent: #3ABDFF (Azul accent)
+--hero-bg: #37B6FF (Fundo do hero)
+--muted-brand: #184F6F (Azul escuro)
+```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c10d3a23-b5b7-45cd-a7ad-b9005ae5168e) and start prompting.
+### Tipografia
+- **Headings**: Poppins (400, 500, 600, 700)
+- **Body**: Inter (400, 500, 600)
 
-Changes made via Lovable will be committed automatically to this repo.
+### Customização
 
-**Use your preferred IDE**
+Para alterar as cores do site, edite o arquivo `src/index.css`:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```css
+:root {
+  --primary: [nova cor em HSL];
+  --secondary: [nova cor em HSL];
+  --accent: [nova cor em HSL];
+  /* ... outras cores */
+}
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Para alterar as fontes, edite o `index.html` e `src/index.css`:
 
-Follow these steps:
+1. Adicione o link da fonte no `index.html`
+2. Atualize as variáveis no `src/index.css`:
+```css
+--font-heading: 'Nova Fonte', system-ui, sans-serif;
+--font-body: 'Nova Fonte Body', system-ui, sans-serif;
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📱 Seções da Landing Page
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Header Sticky**: Navegação fixa com logo e menu responsivo
+2. **Hero**: Seção principal com CTA e indicadores de confiança
+3. **Sobre Mim**: Apresentação profissional com valores e diferenciais
+4. **Serviços**: Grid de serviços com preços e descrições
+5. **Por que me Escolher**: Razões e benefícios únicos
+6. **FAQ**: Perguntas frequentes com accordion
+7. **Contato**: Formulários de contato e informações
+8. **Footer**: Links e informações finais
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠️ Como usar
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Instalação
+
+```bash
+# Clone o repositório
+git clone <URL_DO_REPOSITORIO>
+
+# Navegue para o diretório
+cd landing-page
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build para Produção
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+```
 
-**Use GitHub Codespaces**
+### Personalização de Conteúdo
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Textos**: Edite os componentes em `src/components/`
+2. **Contatos**: Atualize os links do WhatsApp, email e telefone
+3. **Imagens**: Substitua as imagens na pasta `src/assets/`
+4. **SEO**: Edite meta tags no `index.html`
 
-## What technologies are used for this project?
+### Configuração do WhatsApp
 
-This project is built with:
+Substitua o número nos componentes:
+```javascript
+// Procure por: https://wa.me/5511999999999
+// Substitua pelo seu número no formato: https://wa.me/55XXXXXXXXXXX
+```
 
-- Vite
+## 📋 Checklist de Lançamento
+
+- [ ] Alterar todas as informações de contato
+- [ ] Personalizar textos e descrições
+- [ ] Adicionar imagens próprias
+- [ ] Configurar domínio personalizado
+- [ ] Testar em diferentes dispositivos
+- [ ] Verificar links e funcionalidades
+- [ ] Configurar Google Analytics (opcional)
+
+## 🔧 Tecnologias Utilizadas
+
+- React 18
 - TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
+- Vite
+- shadcn/ui Components
+- Lucide React Icons
+- React Router DOM
 
-## How can I deploy this project?
+## 📞 Suporte
 
-Simply open [Lovable](https://lovable.dev/projects/c10d3a23-b5b7-45cd-a7ad-b9005ae5168e) and click on Share -> Publish.
+Para dúvidas sobre customização ou problemas técnicos, entre em contato através do WhatsApp ou email configurado na landing page.
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Desenvolvido com ❤️ para profissionais que buscam uma presença digital impactante.
